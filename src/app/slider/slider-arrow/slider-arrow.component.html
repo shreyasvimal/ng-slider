@@ -1,0 +1,10 @@
+<a href="#" 
+  class="mat-slider-controls mat-slider-prev" 
+  *ngIf="arrowDirection.LEFT === direction"
+  (click)="navigate($event, arrowDirection.LEFT)"
+>‹</a>
+<a href="#" 
+  class="mat-slider-controls mat-slider-next" 
+  *ngIf="arrowDirection.RIGHT === direction"
+  (click)="navigate($event, arrowDirection.RIGHT)"
+>›</a>

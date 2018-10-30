@@ -1,0 +1,15 @@
+<div class="mat-slider-wrapper"> 
+  <div class="mat-slider" #slider>
+      <mat-slider-arrow 
+        [direction]="arrowDirection.LEFT"
+        (clickedDirection)="navigate($event)"
+      ></mat-slider-arrow>
+      <ul [ngStyle]="moveProps" #list>
+          <ng-content></ng-content>
+      </ul>
+      <mat-slider-arrow 
+        [direction]="arrowDirection.RIGHT"
+        (clickedDirection)="navigate($event)"
+      ></mat-slider-arrow>
+  </div>
+</div>
